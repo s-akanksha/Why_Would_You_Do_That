@@ -2,10 +2,10 @@
 SnT Project 2021, Cognitive Revolutionaries, Brain and Cognitive Society
 
 # Authors
-1. Akanksha Singh
-2. Suyash Mallik
+1. [Akanksha Singh](https://github.com/s-akanksha "Akanksha Singh's GitHub Profile")
+2. [Suyash Mallik](https://github.com/zapmonkey02 "Suyash Mallik's Github Profile")
 
-Under Mentor Shivanshu Tyagi
+Under Mentor [Shivanshu Tyagi](https://github.com/spazewalker "Shivanshu Tyagi's Github Profile")
 
 # Motivation
 
