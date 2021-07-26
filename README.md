@@ -25,6 +25,7 @@ Under Mentor [Shivanshu Tyagi](https://github.com/spazewalker "Shivanshu Tyagi's
  
 1. [Documentation](https://docs.google.com/document/d/1tYOMU2vSPr8-U0sZotL3y6mNDOYN9G_URXn26VF1FHs/edit?usp=sharing)
 2. [Midterm Eval Presentation](https://docs.google.com/presentation/d/1YRn8WZGawKJYHM030Ro91XrwTofnK9UjRSwetqxB_to/edit?usp=sharing)
+3. [Poster](https://www.canva.com/design/DAElPOg_yaY/0BzuZTphySJAyIizCo3Ctw/edit?category=tACFat6uXco)
 
 # Installations
 
@@ -127,7 +128,7 @@ In the implementation, when we randomly initialize a state, we first pick random
 
 Now, to train the neural network we would need target Q-values so that we can calculate a loss function. This target Q value is calculated using the following formula:
 
-                                                    Target  = reward + (gamma)max(Q(s’,a))
+                                                 Target  = reward + (gamma)max(Q(s’,a))
 
 Where reward is the immediate reward on performing the action, gamma is the discount rate, s’  is the new state after action a1 was performed on state s. Max(Q(s’,a)) is the maximum Q value(according to current weights) in state s’ for any action. Thus, this Q value will eventually converge to the correct Q value. We used the hubber’s loss function to train our model. 
 
