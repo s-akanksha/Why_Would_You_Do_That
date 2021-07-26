@@ -77,7 +77,7 @@ We designed a system where agents had a prisoner’s dilemma problem with cooper
 |  Defect   |    2,0    |0.5, 0.5|
 
 
-Our model comprises of 3 types of agents:
+Our model comprises of 4 types of agents:
 
 
 1. Always Cooperative.
