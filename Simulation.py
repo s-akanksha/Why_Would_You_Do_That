@@ -1,6 +1,6 @@
 import numpy as np
 import random as rnd
-''' suyash tune subah se ye kachra kiya hai? ;-;'''
+
  
 class Monke():
   #monke_type specifies the strategy chosen by the monkey: 0 - Always co-operate, 1 - Always defect
@@ -35,7 +35,7 @@ class Environment():
     self.pop_hist = []
  
   def setup(self, monkes : list):
-  
+
         self.monkes = monkes
         for i in range(len(monkes)):
             monkes[i].id=i
