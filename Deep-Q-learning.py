@@ -52,11 +52,11 @@ class env:
     partner_does = 0
     if encounter<self.num_agent1:
       partner_does = 1
-    if encounter>self.num_agent1 and encounter<self.num_agent2:
+    if encounter>self.num_agent1 and encounter<self.num_agent2+self.num_agent1:
       partner_does = -1
-    if encounter>self.num_agent3:
-      partner_does = self.interaction_history[encounter-self.num_agent1-self.num_agent2]
-      self.interaction_history[encounter-self.num_agent1-self.num_agent2] = action
+    if encounter>self.num_agent1+self.num_agent2:
+      partner_does = self.interaction_history[encounter-self.num_agent1-self.num_agent2-1]
+      self.interaction_history[encounter-self.num_agent1-self.num_agent2-1] = action
     if partner_does == 0:
       partner_does = rand.choice([-1,1])
     reward = 0 #initialize reward 0
