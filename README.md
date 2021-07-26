@@ -7,6 +7,50 @@ SnT Project 2021, Cognitive Revolutionaries, Brain and Cognitive Society
 
 Under Mentor [Shivanshu Tyagi](https://github.com/spazewalker "Shivanshu Tyagi's Github Profile")
 
+# Contents
+
+* [Links](https://github.com/s-akanksha/Why_Would_You_Do_That#links)
+* [Installations](https://github.com/s-akanksha/Why_Would_You_Do_That#installations)
+* [Usage](https://github.com/s-akanksha/Why_Would_You_Do_That#usage)
+* [Motivation](https://github.com/s-akanksha/Why_Would_You_Do_That#motivation)
+* [Progress](https://github.com/s-akanksha/Why_Would_You_Do_That#progress)
+* [Designing A Simulation](https://github.com/s-akanksha/Why_Would_You_Do_That#desgining-a-simulation)
+* [Python Implementation Of Simulation](https://github.com/s-akanksha/Why_Would_You_Do_That#python-implementation-of-simulation)
+* [Results Of The Simulations](https://github.com/s-akanksha/Why_Would_You_Do_That#results-of-the-simulation)
+* [Training An Agent](https://github.com/s-akanksha/Why_Would_You_Do_That#training-an-agent)
+* [Deep Q-learning](https://github.com/s-akanksha/Why_Would_You_Do_That#deep-q-learning)
+* [Conclusions](https://github.com/s-akanksha/Why_Would_You_Do_That#conclusions)
+
+# Links
+ 
+1. [Documentation](https://docs.google.com/document/d/1tYOMU2vSPr8-U0sZotL3y6mNDOYN9G_URXn26VF1FHs/edit?usp=sharing)
+2. [Midterm Eval Presentation](https://docs.google.com/presentation/d/1YRn8WZGawKJYHM030Ro91XrwTofnK9UjRSwetqxB_to/edit?usp=sharing)
+
+# Installations
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install packages before running the code.
+
+```bash
+pip install numpy
+pip install random
+pip install keras
+pip install tensorflow
+```
+# Usage
+
+```bash
+import random
+import numpy as np
+from collections import deque
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.optimizers import Adam
+from keras import backend as K
+import random as rand
+
+import tensorflow as tf
+```
+
 # Motivation
 
 To study the evolution and spread of altruism in a large population by simulating an artificial environment with agents that are subject to a certain set of rules for survival and reproduction. These agents can pick and choose between combinations of different strategies and our goal is to find a set of conditions that are conducive to the development of altruistic strategies that are beneficial to the individual agent as well. In particular, we aim to study the development, viability and trade-offs of recognition systems and memory, and their impact on the development of altruistic strategies. 
