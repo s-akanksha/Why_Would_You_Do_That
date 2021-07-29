@@ -166,6 +166,7 @@ if __name__ == "__main__":
                 agent.replay(batch_size)
      
     state = env.reset()
+    state = np.reshape(state, [1, state_size])
     string = input("Run simulation with trained agvent?")
     if string == "yes":
       for i in range (50):
