@@ -48,6 +48,8 @@ class env:
     return self.state
 
   def step(self,action):
+    if action==0:
+      action = -1
     encounter = rand.randint(1,self.num_agent1+self.num_agent2+self.num_agent3)
     partner_does = 0
     if encounter<self.num_agent1:
@@ -122,7 +124,7 @@ class DQNAgent:
 
     def act(self, state):
         if np.random.rand() <= self.epsilon:
-            return random.randrange(self.action_size)
+            return rand.choice([0,1])
         act_values = self.model.predict(state)
         return np.argmax(act_values[0])  # returns action
 
@@ -162,3 +164,16 @@ if __name__ == "__main__":
             state = next_state
             if len(agent.memory) > batch_size:
                 agent.replay(batch_size)
+     
+    state = env.reset()
+    string = input("Run simulation with trained agvent?")
+    if string == "yes":
+      for i in range (50):
+        print(env.num_agent1,env.num_agent2,env.num_agent3,env.interaction_history)
+        action = agent.act(state)
+        print(action)
+        next_state, reward = env.step(action)
+        print(reward)
+        next_state = np.reshape(next_state, [1, state_size])
+        agent.memorize(state, action, reward, next_state)
+        state = next_state
